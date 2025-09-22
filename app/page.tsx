@@ -20,9 +20,10 @@ import {
 } from "lucide-react";
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('home');
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -261,10 +262,10 @@ const Portfolio = () => {
     },
   ];
 
-  const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    setActiveSection(sectionId);
-  };
+  const scrollToSection = (sectionId: string) => {
+  document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  setActiveSection(sectionId);
+};
   const getYouTubeEmbed = (videoId, startTime) =>
     `https://www.youtube-nocookie.com/embed/${videoId}?modestbranding=1&rel=0&start=${
       startTime || 0
