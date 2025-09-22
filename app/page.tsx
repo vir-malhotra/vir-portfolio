@@ -192,7 +192,23 @@ const Portfolio: React.FC = () => {
     Domains: ["Trading Systems", "Audio Processing", "Machine Learning", "Web Development"],
   };
 
-  const creativeProjects = [
+  type CreativeProject = {
+  title: string;
+  description: string;
+  type: string;
+  year: string;
+  media: "audio" | "video" | "demo";
+  thumbnail: string;
+  details: string[];
+  // optional media sources (only some projects have these)
+  audioSrc?: string;
+  videoMp4?: string;
+  videoId?: string;
+  driveLink?: string;
+  startTime?: number;
+};
+
+  const creativeProjects: CreativeProject[] = [
     {
       title: "Capstone Film Scores",
       description:
