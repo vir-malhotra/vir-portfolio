@@ -724,8 +724,8 @@ const Portfolio = () => {
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                I'm a Computer Science student at NYU Abu Dhabi with a unique
-                intersection of interests spanning high-frequency trading
+                I&apos;m a Computer Science student at NYU Abu Dhabi with a unique
+                 intersection of interests spanning high-frequency trading
                 systems, audio technology, AI research, and creative expression.
                 My work bridges the technical precision required in financial
                 markets with the artistic innovation of music production and
@@ -1320,11 +1320,11 @@ const Portfolio = () => {
       >
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8">
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </h2>
           <p className="text-xl mb-12 opacity-90 max-w-2xl mx-auto">
             Interested in trading systems, audio technology, AI research, or
-            creative collaborations? I'm always open to discussing innovative
+            creative collaborations? I&apos;m always open to discussing innovative
             projects, music production, and opportunities.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
